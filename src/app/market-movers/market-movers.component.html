@@ -1,0 +1,18 @@
+<section>
+    <p>Market Movers</p>
+    Top Five 
+    <select [(ngModel)]='paramGL' name='accountMovers'>
+      <option value='gainers'>Gaining</option>
+      <option value='losers'>Lossing</option>
+    </select>
+    Investment Accounts.
+    <button (click)='makeServiceCall()'>View</button><br/>
+    <ol>
+        <li *ngFor='let account of accountNames'>{{account}}</li>
+    </ol>
+    Market Indices: <button (click)='mrktindexCall()'>Show</button><br/>
+    <ul>
+        <li *ngFor='let iname of indicesNames'>{{iname}}</li>
+        <li *ngFor='let inum of indicesNum'>{{inum}}</li>
+    </ul>
+</section>

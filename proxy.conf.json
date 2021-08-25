@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "http://citihackathon-citihackathon.namdevops31.conygre.com",
+      "secure": false
+    }
+  }

@@ -1,0 +1,12 @@
+<section>
+    <p>Past Networth</p>
+    View Your NetWorth 
+    <select [(ngModel)]='pastTime' name='pnw'>
+      <option value='Last Week'>Last Week</option>
+      <option value='Last Month'>Last Month</option>
+      <option value='Last Quarter'>Last Quarter</option>
+      <option value='YTD'>Year To Date</option>
+    </select>
+    <button (click) = "makePNWCall()">View</button><br/>
+    {{networth}}
+</section>
