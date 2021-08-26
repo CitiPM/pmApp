@@ -7,6 +7,7 @@
              <th scope="col">Quantity</th>
              <th scope="col">Price</th>
              <th scope="col">Average Price</th>
+             <th scope="col">Total Value</th>
          </tr>
      </thead>
      <tbody>
@@ -15,6 +16,7 @@
              <td>{{ acc.quantity}}</td>
              <td>{{ acc.price_current | currency}}</td>
              <td>{{ acc.price_purchase | currency}}</td>
+             <td>{{ acc.quantity*acc.price_current | currency}}</td>
          </tr>
      </tbody>
    </table>
