@@ -1,0 +1,10 @@
+p {
+  font-weight: bold;
+  font-size: 125%;
+  text-align: center;
+}
+
+td,
+th {
+  text-align: center;
+}
