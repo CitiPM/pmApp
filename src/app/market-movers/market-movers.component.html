@@ -1,12 +1,12 @@
 <section>
     <div class="row" style="padding-top: 20px;">
-        <ng-template ngFor let-iname [ngForOf]="indicesNames">
-            <!-- <ng-template ngFor let-inum [ngForOf]="indicesNum"> -->
+        <!-- <ng-template *ngFor="let inum of indicesNum; index as i"> -->
+        <ng-template ngFor let-i="index" let-inum [ngForOf]="indicesNum">
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                        <h5 class="card-title">{{iname}}</h5>
-                        <p class="card-text"> $10 </p>
+                        <h5 class="card-title">{{indicesNames[i]}}</h5>
+                        <p class="card-text"> {{inum | currency}} </p>
                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
                     </div>
