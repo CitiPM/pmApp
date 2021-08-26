@@ -8,6 +8,8 @@
              <th scope="col">Price</th>
              <th scope="col">Average Price</th>
              <th scope="col">Total Value</th>
+             <th scope="col">Change</th>
+             <th scope="col">% Change</th>
          </tr>
      </thead>
      <tbody>
@@ -17,6 +19,8 @@
              <td>{{ acc.price_current | currency}}</td>
              <td>{{ acc.price_purchase | currency}}</td>
              <td>{{ acc.quantity*acc.price_current | currency}}</td>
+             <td [ngStyle]="acc.quantity*(acc.price_purchase -acc.price_current) < 0 ? {'color':'green'}: {'color':'red'}">{{ acc.quantity*(acc.price_current - acc.price_purchase)  | currency}}</td>
+             <td [ngStyle]="(acc.price_current - acc.price_purchase)/acc.price_purchase > 0 ? {'color':'green'}: {'color':'red'}">{{ (acc.price_current - acc.price_purchase)/acc.price_purchase | percent}}</td>
          </tr>
      </tbody>
    </table>
