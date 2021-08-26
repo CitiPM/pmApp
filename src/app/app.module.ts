@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { GainersComponent } from './gainers/gainers.component';
 import { LosersComponent } from './losers/losers.component';
+import { CashComponent } from './cash/cash.component';
+import { InvestmentsComponent } from './investments/investments.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { LosersComponent } from './losers/losers.component';
     PastNetWorthComponent,
 
     GainersComponent,
-    LosersComponent
+    LosersComponent,
+    CashComponent,
+    InvestmentsComponent
   ],
   imports: [
     BrowserModule,

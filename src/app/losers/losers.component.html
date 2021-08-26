@@ -1,17 +1,10 @@
 <section>
-    <!-- <p>Market Movers</p>
-    Top Five 
-    <select [(ngModel)]='paramGL' name='accountMovers'>
-        <option value='gainers'>Gaining</option>
-        <option value='losers'>Lossing</option>
-    </select>
-    Investment Accounts.
-    <button (click)='makeServiceCall()'>View</button><br/> -->
-    <table class="table table-striped">
+    <p>Top Losers</p>
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">Ticker</th>
-                <th scope="col">Price</th>
+                <!-- <th scope="col">Price</th> -->
                  <th scope="col">% Change</th>
             </tr>
         </thead>
@@ -22,7 +15,4 @@
             </tr>
         </tbody>
     </table>
-    <!-- <ol>
-        <li *ngFor='let account of accountNames'>{{account}}</li>
-    </ol> -->
 </section>
