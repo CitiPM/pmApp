@@ -1,5 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { MrktService } from 'src/services/mrkt.service';
+//import { AppModule } from '../app.module';
+
+// @NgModule({
+//   declarations: [
+//       // PastNetWorthComponent,
+//       // Example2ndComponent,
+//       // Example3rdComponent
+//   ],
+//   imports: [
+
+//     AppModule // <--- this Imports the source module, with its exports
+//   ], 
+//   // exports: [
+//   //     SecondPage,
+//   // ]
+//   })
 
 @Component({
   selector: 'app-past-net-worth',
@@ -15,7 +31,7 @@ export class PastNetWorthComponent implements OnInit {
 
   map: any = {};
   // networth : number = 0.0;
-  networth: string = "0"
+  networth: string = "$0.00"
   currnetworth : number = 0.0;
   investVal: number = 0.0;
   cashVal: number = 0.0

@@ -1,5 +1,6 @@
 import { ANALYZE_FOR_ENTRY_COMPONENTS, Component, OnInit } from '@angular/core';
 import { MrktService } from 'src/services/mrkt.service';
+
 interface Account {
   id: number;
   type: string;
