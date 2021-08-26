@@ -3,3 +3,17 @@ p {
   font-size: 125%;
   text-align: center;
 }
+
+td,
+th {
+  text-align: center;
+}
+
+td.percentage-change {
+  color: green;
+}
+
+/* table.menu {
+  margin-right: 0px;
+  margin-left: auto;
+} */

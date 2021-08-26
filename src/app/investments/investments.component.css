@@ -4,6 +4,10 @@ p {
   text-align: center;
 }
 
+/* td.ticker {
+  color: blue;
+} */
+
 td,
 th {
   text-align: center;

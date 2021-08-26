@@ -3,9 +3,14 @@
   height: auto;
 }
 
-/* mat-grid-tile {
-  border;
-} */
+td.ticker {
+  color: blue;
+}
+
+mat-grid-tile {
+  /* background: lightblue; */
+  border-style: outset;
+}
 
 /* div.input,
 div.button {

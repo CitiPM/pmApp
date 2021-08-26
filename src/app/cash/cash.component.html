@@ -9,7 +9,7 @@
      </thead>
      <tbody>
          <tr *ngFor="let acc of accounts; index as i">
-             <td>{{ acc.ticker}}</td>
+             <td class="account">{{ acc.ticker}}</td>
              <td>{{ acc.price_current | currency}}</td>
          </tr>
      </tbody>

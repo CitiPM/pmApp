@@ -11,7 +11,7 @@
      </thead>
      <tbody>
          <tr *ngFor="let acc of accounts; index as i">
-             <td>{{ acc.ticker}}</td>
+             <td class="ticker">{{ acc.ticker}}</td>
              <td>{{ acc.quantity}}</td>
              <td>{{ acc.price_current | currency}}</td>
              <td>{{ acc.price_purchase | currency}}</td>

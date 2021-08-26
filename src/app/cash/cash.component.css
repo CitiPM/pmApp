@@ -4,6 +4,11 @@ p {
   text-align: center;
 }
 
+/* table {
+  width: auto;
+  float: right;
+} */
+
 th {
   text-align: center;
 }

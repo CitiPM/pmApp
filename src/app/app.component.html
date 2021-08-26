@@ -65,17 +65,12 @@
   </div>
 
   <!-- <router-outlet></router-outlet> -->
-
-  <!-- <mat-grid-list cols="2" rowHeight="2:1">
-    <app-portfolio>1</app-portfolio>
-    <app-portfolio>1</app-portfolio>
-    <app-portfolio>1</app-portfolio>
-    <app-market-movers>1</app-market-movers>
-  </mat-grid-list> -->
-  <mat-grid-list cols="2" rowHeight="3:1">
-    <mat-grid-tile><app-cash></app-cash></mat-grid-tile>
-    <mat-grid-tile><app-gainers></app-gainers></mat-grid-tile>
-    <mat-grid-tile><app-investments></app-investments></mat-grid-tile>
-    <mat-grid-tile><app-losers></app-losers></mat-grid-tile>
-  </mat-grid-list>
+  <div class="row" style="padding-top: 20px;">
+    <mat-grid-list cols="4" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile><app-cash></app-cash></mat-grid-tile>
+      <mat-grid-tile><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile><app-gainers></app-gainers></mat-grid-tile>
+      <mat-grid-tile><app-losers></app-losers></mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </article>
