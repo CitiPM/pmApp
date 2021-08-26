@@ -25,12 +25,11 @@ export class MarketMoversComponent implements OnInit {
     this.mrktService.getIndicesData().subscribe((data:any)=>{this.indicesNum = data})
   }
 
-  makeServiceCall(){
-    console.log("clicked")
-    this.mrktService.getGLData(this.paramGL)
-      .subscribe( (data:any)=>{
-        this.accountNames = data
-      } )
-  }
-
+  // makeServiceCall(){
+  //   console.log("clicked")
+  //   this.mrktService.getGLData(this.paramGL)
+  //     .subscribe( (data:any)=>{
+  //       this.accountNames = data
+  //     } )
+  // }
 }

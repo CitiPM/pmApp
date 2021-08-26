@@ -9,20 +9,30 @@ import { MarketMoversComponent } from './market-movers/market-movers.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { PastNetWorthComponent } from './past-net-worth/past-net-worth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { GainersComponent } from './gainers/gainers.component';
+import { LosersComponent } from './losers/losers.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MarketMoversComponent,
     AccountsComponent,
-    PastNetWorthComponent
+    PastNetWorthComponent,
+
+    GainersComponent,
+    LosersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

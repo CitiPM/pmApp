@@ -1,6 +1,5 @@
 import { ANALYZE_FOR_ENTRY_COMPONENTS, Component, OnInit } from '@angular/core';
 import { MrktService } from 'src/services/mrkt.service';
-
 interface Account {
   id: number;
   type: string;
@@ -33,9 +32,12 @@ export class AccountsComponent implements OnInit {
     console.log("clicked")
     this.mrktService.getAccData(this.accType)
       .subscribe( (data:any)=>{
+        // var price = String(data.price_current)
+        // var formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD',});
+        // data.price_current = formatter.format(data.price_current)
+        // console.log(data)
         this.accounts = data
-      } )
-    console.log(this.accounts)  
-  }
-
+        console.log(this.accounts)
+      }) 
+    }
 }

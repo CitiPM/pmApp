@@ -64,5 +64,18 @@
     <app-market-movers></app-market-movers>
   </div>
 
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
+
+  <!-- <mat-grid-list cols="2" rowHeight="2:1">
+    <app-portfolio>1</app-portfolio>
+    <app-portfolio>1</app-portfolio>
+    <app-portfolio>1</app-portfolio>
+    <app-market-movers>1</app-market-movers>
+  </mat-grid-list> -->
+  <mat-grid-list cols="2" rowHeight="3:1">
+    <mat-grid-tile><app-accounts></app-accounts></mat-grid-tile>
+    <mat-grid-tile><app-gainers></app-gainers></mat-grid-tile>
+    <mat-grid-tile><app-accounts></app-accounts></mat-grid-tile>
+    <mat-grid-tile><app-losers></app-losers></mat-grid-tile>
+  </mat-grid-list>
 </article>
