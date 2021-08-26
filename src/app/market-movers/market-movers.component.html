@@ -1,66 +1,17 @@
 <section>
-    <div class="container">
-        <div class="row" style="padding-top: 20px;">
-            <ng-template ngFor let-iname [ngForOf]="indicesNames">
-                <!-- <ng-template ngFor let-inum [ngForOf]="indicesNum"> -->
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="card-body">
-                            <h5 class="card-title">{{iname}}</h5>
-                            <p class="card-text"> $10 </p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                            </div>
+    <div class="row" style="padding-top: 20px;">
+        <ng-template ngFor let-iname [ngForOf]="indicesNames">
+            <!-- <ng-template ngFor let-inum [ngForOf]="indicesNum"> -->
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">{{iname}}</h5>
+                        <p class="card-text"> $10 </p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
                     </div>
-                <!-- </ng-template> -->
-            </ng-template>
-        </div>
-    <!-- <p>Market Movers</p> -->
-    <!-- Top Five 
-    <select [(ngModel)]='paramGL' name='accountMovers'>
-        <option value='gainers'>Gaining</option>
-        <option value='losers'>Lossing</option>
-    </select>
-    Investment Accounts.
-    <button (click)='makeServiceCall()'>View</button><br/>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Ticker</th>
-                <th scope="col">Price</th>
-                 <th scope="col">% Change</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let account of accountNames; index as i">
-                <th scope="row">{{ i + 1 }}</th>
-                <td>
-                <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px">
-                {{ country.name }}
-                </td>
-                <td>{{ account}}</td>
-                <td>{{ account.price | number }}</td>
-            </tr>
-        </tbody>
-    </table>
-    <ol>
-        <li *ngFor='let account of accountNames'>{{account}}</li>
-    </ol>
-    Market Indices: <button (click)='mrktindexCall()'>Show</button><br/>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Ticker</th>
-                <th scope="col">Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let iname of indicesNames;">
-                <td>{{ iname}}</td>
-                <td>{{ inum}}</td>
-            </tr>
-        </tbody>
-    </table> -->
+                </div>
+            <!-- </ng-template> -->
+        </ng-template>
     </div>
 </section>
