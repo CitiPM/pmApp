@@ -20,4 +20,12 @@ export class MrktService {
   getPNWData(param : string){
     return this.http.get(`http://citihackathon-citihackathon.namdevops31.conygre.com/accounts/past/${param}`)
   }
+
+  getCNWData(){
+    return this.http.get(`http://citihackathon-citihackathon.namdevops31.conygre.com/accounts/value`)
+  }
+
+  getAccData(param : string){
+    return this.http.get(`http://citihackathon-citihackathon.namdevops31.conygre.com/accounts/${param}`)
+  }
 }
