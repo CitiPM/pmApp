@@ -1,1 +1,14 @@
-<p>accounts works!</p>
+<section>
+   <!-- in Angular all forms are ngForm due to FormsModule -->
+  <form>
+    Select an Account Type
+    <select [(ngModel)]='accType' name='type'>
+      <option value='investment'>Investment</option>
+      <option value='cash'>Cash</option>
+    </select><br/>
+  </form>
+  <button (click)='selectAccountCall()'>Select</button>
+  <ul>
+        <li *ngFor='let acc of accounts'>{{acc.ticker +"-----Total Value:" + acc.price_current}}</li>
+    </ul>
+</section>
