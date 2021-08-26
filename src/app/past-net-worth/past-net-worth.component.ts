@@ -14,7 +14,8 @@ export class PastNetWorthComponent implements OnInit {
   }
 
   map: any = {};
-  networth : number = 0.0;
+  // networth : number = 0.0;
+  networth: string = "0"
   currnetworth : number = 0.0;
   investVal: number = 0.0;
   cashVal: number = 0.0
@@ -24,7 +25,9 @@ export class PastNetWorthComponent implements OnInit {
     console.log("clicked")
     this.mrktService.getPNWData(this.pastTime)
       .subscribe( (data:any)=>{
-        this.networth = data
+        // this.networth = Math.round(data)
+        var formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD',});
+        this.networth = formatter.format(data)
       } )
   }
 
