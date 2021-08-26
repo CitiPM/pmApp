@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MarketMoversComponent } from './market-movers/market-movers.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { PastNetWorthComponent } from './past-net-worth/past-net-worth.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PastNetWorthComponent } from './past-net-worth/past-net-worth.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

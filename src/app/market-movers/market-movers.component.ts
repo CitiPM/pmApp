@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MrktService } from 'src/services/mrkt.service';
 
+
 @Component({
   selector: 'app-market-movers',
   templateUrl: './market-movers.component.html',
