@@ -1,12 +1,16 @@
-<div style="padding-top:0;">
-  <p>Portfolio Networth</p>
-  View Your Past NetWorth 
+
+<h3>Portfolio Networth</h3>
+<span> 
+  <p>View Your Past NetWorth </p> 
   <select [(ngModel)]='pastTime' name='pnw'>
     <option value='Last Week'>Last Week</option>
     <option value='Last Month'>Last Month</option>
     <option value='Last Quarter'>Last Quarter</option>
     <option value='YTD'>Year To Date</option>
   </select>
-  <button (click) = "makePNWCall()">View</button><br/>
-  {{networth | currency}}
-</div>
+
+  <button type="button" class="btn btn-primary" (click) = "makePNWCall()">View</button><br/>
+</span>
+<!-- <button (click) = "makePNWCall()">View</button><br/> -->
+<h5>{{networth | currency}} <h5>
+

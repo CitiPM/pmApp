@@ -35,11 +35,27 @@
     <mat-grid-list cols="4" rowHeight="1:1" style="padding-bottom: 20px;">
       <mat-grid-tile [colspan]=1><app-cash></app-cash></mat-grid-tile>
       <mat-grid-tile [colspan]=3><app-investments></app-investments></mat-grid-tile>
+      <!-- <mat-grid-tile [colspan]=2 ><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
+      
+      <mat-grid-tile [colspan]=2 ><app-gainers></app-gainers><app-losers></app-losers></mat-grid-tile> -->
+    </mat-grid-list>
+  </div>
+  <div class="row">
+    <mat-grid-list cols="5" rowHeight="1:1">
+      <mat-grid-tile [colspan]=1 ><app-past-net-worth></app-past-net-worth></mat-grid-tile>
+      <mat-grid-tile [colspan]=2 ><app-chart></app-chart></mat-grid-tile>
+      <mat-grid-tile [colspan]=2 ><app-gainers></app-gainers><app-losers></app-losers></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <!-- <div class="row" style="padding-top: 20px;">
+    <mat-grid-list cols="4" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile [colspan]=1><app-cash></app-cash></mat-grid-tile>
+      <mat-grid-tile [colspan]=3><app-investments></app-investments></mat-grid-tile>
       <mat-grid-tile [colspan]=2 ><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
       
       <mat-grid-tile [colspan]=2 ><app-gainers></app-gainers><app-losers></app-losers></mat-grid-tile>
     </mat-grid-list>
-  </div>
+  </div> -->
   <!-- <div class="row" style="padding-top: 20px;">
     <mat-grid-list cols="5" rowHeight="1:1" style="padding-bottom: 20px;">
       <mat-grid-tile [colspan]=4><app-cash></app-cash><app-investments></app-investments></mat-grid-tile>

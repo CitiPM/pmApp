@@ -11,8 +11,10 @@ export class PastNetWorthComponent implements OnInit {
   constructor(private mrktService: MrktService) { }
 
   ngOnInit(): void {
-    this.makeCNWCall();
+    // this.makeCNWCall();
   }
+
+  dates = ['Last Week', 'Last Month', 'Last Quarter','YTD'];
 
   map: any = {};
   networth : number = 0.0;
@@ -35,5 +37,4 @@ export class PastNetWorthComponent implements OnInit {
         console.log(data);
       } )
   }
-
 }
