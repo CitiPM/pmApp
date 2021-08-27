@@ -30,7 +30,6 @@ export class CashComponent implements OnInit {
   }
 
   selectAccountCall(){
-    console.log("clicked")
     this.mrktService.getAccData(this.accType)
       .subscribe( (data:any)=>{
         // var price = String(data.price_current)

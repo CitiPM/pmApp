@@ -1,25 +1,27 @@
-<p>Investments</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Ticker</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Price</th>
-            <th scope="col">Average Price</th>
-            <th scope="col">Total Value</th>
-            <th scope="col">Change</th>
-            <th scope="col">% Change</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let acc of accounts; index as i">
-            <td class="ticker">{{ acc.ticker}}</td>
-            <td>{{ acc.quantity}}</td>
-            <td>{{ acc.price_current | currency}}</td>
-            <td>{{ acc.price_purchase | currency}}</td>
-            <td>{{ acc.quantity*acc.price_current | currency}}</td>
-            <td [ngStyle]="acc.quantity*(acc.price_purchase -acc.price_current) < 0 ? {'color':'green'}: {'color':'red'}">{{ acc.quantity*(acc.price_current - acc.price_purchase)  | currency}}</td>
-            <td [ngStyle]="(acc.price_current - acc.price_purchase)/acc.price_purchase > 0 ? {'color':'green'}: {'color':'red'}">{{ (acc.price_current - acc.price_purchase)/acc.price_purchase | percent}}</td>
-        </tr>
-    </tbody>
-</table>
+<div>
+    <h3>Investments</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Ticker</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Average Price</th>
+                <th scope="col">Total Value</th>
+                <th scope="col">Change</th>
+                <th scope="col">% Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let acc of accounts; index as i">
+                <td class="ticker">{{ acc.ticker}}</td>
+                <td>{{ acc.quantity}}</td>
+                <td>{{ acc.price_current | currency}}</td>
+                <td>{{ acc.price_purchase | currency}}</td>
+                <td>{{ acc.quantity*acc.price_current | currency}}</td>
+                <td [ngStyle]="acc.quantity*(acc.price_purchase -acc.price_current) < 0 ? {'color':'green'}: {'color':'red'}">{{ acc.quantity*(acc.price_current - acc.price_purchase)  | currency}}</td>
+                <td [ngStyle]="(acc.price_current - acc.price_purchase)/acc.price_purchase > 0 ? {'color':'green'}: {'color':'red'}">{{ (acc.price_current - acc.price_purchase)/acc.price_purchase | percent}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
