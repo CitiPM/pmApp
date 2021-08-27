@@ -10,18 +10,18 @@ export class PastNetWorthComponent implements OnInit {
 
   constructor(private mrktService: MrktService) { }
 
-  ngOnInit(): void {
-    // this.makeCNWCall();
-  }
-
-  dates = ['Last Week', 'Last Month', 'Last Quarter','YTD'];
-
   map: any = {};
   networth : number = 0.0;
   currnetworth : number = 0.0;
   investVal: number = 0.0;
   cashVal: number = 0.0
   pastTime : string = "Last Week"
+
+  ngOnInit(): void {
+    this.makePNWCall()
+  }
+
+  dates = ['Last Week', 'Last Month', 'Last Quarter','YTD'];
 
   makePNWCall(){
     this.mrktService.getPNWData(this.pastTime)
