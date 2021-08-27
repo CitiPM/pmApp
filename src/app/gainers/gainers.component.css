@@ -4,6 +4,14 @@ p {
   text-align: center;
 }
 
+table {
+  width: 75%;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
 td,
 th {
   text-align: center;
@@ -12,8 +20,3 @@ th {
 td.percentage-change {
   color: green;
 }
-
-/* table.menu {
-  margin-right: 0px;
-  margin-left: auto;
-} */

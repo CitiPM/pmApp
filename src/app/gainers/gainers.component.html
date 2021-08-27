@@ -1,10 +1,28 @@
-<section>
-    <p>Top Gainers</p>
+<p>Top Gainers</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Ticker</th>
+            <!-- <th scope="col">Price</th> -->
+            <th scope="col">% Change</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of accountNames; index as i">
+            <td>{{ account}}</td>
+            <td class="percentage-change"> 2%</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <div class="jumbotron">
+    <h5 class="display-4" style="text-align: center;">Top Gainers</h5>
+    <hr class="my-4">
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">Ticker</th>
-                <!-- <th scope="col">Price</th> -->
+                <th scope="col">Price</th>
                 <th scope="col">% Change</th>
             </tr>
         </thead>
@@ -15,5 +33,4 @@
             </tr>
         </tbody>
     </table>
-
-</section>
+  </div> -->

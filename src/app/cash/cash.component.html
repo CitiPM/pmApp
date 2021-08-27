@@ -1,17 +1,39 @@
-<section>
-   <p>Cash Accounts</p>
-   <table class="table">
-     <thead>
-         <tr>
-             <th scope="col">Account</th>
-             <th scope="col">Value</th>
-         </tr>
-     </thead>
-     <tbody>
-         <tr *ngFor="let acc of accounts; index as i">
-             <td class="account">{{ acc.ticker}}</td>
-             <td>{{ acc.price_current | currency}}</td>
-         </tr>
-     </tbody>
-   </table>
- </section>
+<div>
+    <p>Cash Accounts</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Account</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let acc of accounts; index as i">
+                <td class="account">{{ acc.ticker}}</td>
+                <td>{{ acc.price_current | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <div class="card" style="padding-top: 0px;">
+    <div class="card-header" style="text-align: center;">
+        Cash Accounts
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Account</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let acc of accounts; index as i">
+                    <td class="account">{{ acc.ticker}}</td>
+                    <td>{{ acc.price_current | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div> -->

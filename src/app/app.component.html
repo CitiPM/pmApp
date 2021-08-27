@@ -1,27 +1,14 @@
-<!-- <article>
-  <h1>Citi Portfolio Manager</h1>
-  <nav>
-    <a routerLink='/accounts'>Current Accounts </a> |
-    <a routerLink='/market-movers'>Market Movers</a> |
-    <a routerLink='/past-net-worth'>Past Networth</a> 
-  </nav>
-  <router-outlet></router-outlet>
-</article> -->
-
-<article>
+<!-- <article> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: #003b70;">
   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
     <img src="../assets/citi-logo.png" class="image" alt="...">
-    <a class="navbar-brand" style="font-size:175%" href="#">Citi Portfolio Manager</a>
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
+    <a class="navbar-brand" style="font-size:175%; text-align: center;">Citi Portfolio Manager</a>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item active">
+      <!-- <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li> -->
+        </li> 
         <li class="nav-item">
           <a class="nav-link" style="font-size:110%" routerLink='/accounts'> Current Accounts</a>
         </li>
@@ -31,7 +18,7 @@
         <li class="nav-item">
           <a class="nav-link" style="font-size:110%" routerLink='/past-net-worth'> Past Networth</a>
         </li>
-      </ul>
+      </ul> -->
       <div class="col-sm-3" style="right:0; position:absolute">
         <input class="form-control" type="search" placeholder="How can we help?" aria-label="Search">
       </div>
@@ -45,16 +32,44 @@
     <app-market-movers></app-market-movers>
   </div>
   <div class="row" style="padding-top: 20px;">
-    <mat-grid-list cols="3" rowHeight="1:1" style="padding-bottom: 20px;">
-      <mat-grid-tile><app-cash></app-cash></mat-grid-tile>
-      <mat-grid-tile><app-investments></app-investments></mat-grid-tile>
-      <mat-grid-tile><app-chart></app-chart></mat-grid-tile>
-      <!-- <mat-grid-tile><app-gainers></app-gainers></mat-grid-tile>
-      <mat-grid-tile><app-losers></app-losers></mat-grid-tile> -->
+    <mat-grid-list cols="4" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile [colspan]=1><app-cash></app-cash></mat-grid-tile>
+      <mat-grid-tile [colspan]=3><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile [colspan]=2 ><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
+      
+      <mat-grid-tile [colspan]=2 ><app-gainers></app-gainers><app-losers></app-losers></mat-grid-tile>
     </mat-grid-list>
   </div>
+  <!-- <div class="row" style="padding-top: 20px;">
+    <mat-grid-list cols="5" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile [colspan]=4><app-cash></app-cash><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile [colspan]=3 ><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile [colspan]=1 ><app-gainers></app-gainers><app-losers></app-losers></mat-grid-tile>
+      <mat-grid-tile [colspan]=4 ><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
+      
+      <mat-grid-tile [colspan]=1><app-losers></app-losers></mat-grid-tile>
+    </mat-grid-list>
+  </div> -->
+  <!-- <div class="row" style="padding-top: 20px;">
+    <mat-grid-list cols="3" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile [colspan]=1><app-cash></app-cash></mat-grid-tile>
+      <mat-grid-tile [colspan]=2 [rowspan]=1><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
+      <mat-grid-tile [colspan]=1 [rowspan]=1><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile [colspan]=3 ><app-gainers></app-gainers></mat-grid-tile>
+      <mat-grid-tile [colspan]=3><app-losers></app-losers></mat-grid-tile>
+    </mat-grid-list>
+  </div> -->
+  <!-- <div class="row" style="padding-top: 20px;">
+    <mat-grid-list cols="3" rowHeight="1:1" style="padding-bottom: 20px;">
+      <mat-grid-tile><app-cash></app-cash></mat-grid-tile>
+      <mat-grid-tile><app-past-net-worth></app-past-net-worth><app-chart></app-chart></mat-grid-tile>
+      <mat-grid-tile><app-investments></app-investments></mat-grid-tile>
+      <mat-grid-tile><app-gainers></app-gainers></mat-grid-tile>
+      <mat-grid-tile><app-losers></app-losers></mat-grid-tile>
+    </mat-grid-list>
+  </div> -->
   <br/>
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
 
   <!-- <app-chart></app-chart> -->
-</article>
+<!-- </article> -->
