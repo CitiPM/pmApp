@@ -10,11 +10,12 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { PastNetWorthComponent } from './past-net-worth/past-net-worth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule} from '@angular/material/grid-list';
 import { GainersComponent } from './gainers/gainers.component';
 import { LosersComponent } from './losers/losers.component';
 import { CashComponent } from './cash/cash.component';
 import { InvestmentsComponent } from './investments/investments.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 @NgModule({
@@ -23,11 +24,11 @@ import { InvestmentsComponent } from './investments/investments.component';
     MarketMoversComponent,
     AccountsComponent,
     PastNetWorthComponent,
-
     GainersComponent,
     LosersComponent,
     CashComponent,
-    InvestmentsComponent
+    InvestmentsComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,7 @@ import { InvestmentsComponent } from './investments/investments.component';
     HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

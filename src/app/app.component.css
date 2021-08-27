@@ -9,6 +9,12 @@ td.ticker {
 
 mat-grid-tile {
   /* background: lightblue; */
+  text-align: left;
+  width: 100%;
+  /* justify-content: flex-start !important ; */
+  /* align-items: start !important; */
+  /* position: absolute;
+  left: 5px; */
   border-style: outset;
 }
 
